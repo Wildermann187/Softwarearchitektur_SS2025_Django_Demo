@@ -45,7 +45,7 @@ def log_message(request):
             message = form.save(commit=False)
             message.log_date = datetime.now()
             message.save()
-            return redirect("HomeListView")  # Redirect to the home page after saving
+            return redirect("home")  # Redirect to the home page after saving
     else:
         return render(request, "hello/log_message.html", {"form": form})
     
