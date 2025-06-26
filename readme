@@ -56,10 +56,5 @@ Dieses Projekt ist eine Beispiel-Webanwendung mit Django, entwickelt für das Mo
 
 ## Hinweise
 
-- Die Zugangsdaten für einen Beispiel-Admin findest du ggf. in der Datei `requirements.txt` oder du legst selbst einen Superuser an.
-- Bei Problemen mit dem virtuellen Environment stelle sicher, dass keine Sonderzeichen (z.B. Umlaute) im Projektpfad sind.
-- Für weitere Fragen siehe die Django-Dokumentation: https://docs.djangoproject.com/
-
----
-
-Viel Erfolg beim Arbeiten mit der
+- Die Zugangsdaten für einen Beispiel-Admin sind in der Datei `requirements.txt` zu finden. 
+- Beim erstellen des virtuellen Environments ist es wichtig, dass keine Sonderzeichen (z.B. Umlaute) im Projektpfad sind.
