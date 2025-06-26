@@ -8,11 +8,8 @@ from hello.models import LogMessage
 from django.views.generic import ListView
 
 
-# Replace the existing home function with the one below
-# Remove the old home function if you want; it's no longer used
-
-class HomeListView(ListView):
-    """Renders the home page, with a list of all messages."""
+class HomeListView(ListView): # Home page view
+    """Rendert die HP mit Einträgen aus der Datenbank."""
     model = LogMessage
 
     def get_context_data(self, **kwargs):
@@ -45,7 +42,7 @@ def log_message(request):
             message = form.save(commit=False)
             message.log_date = datetime.now()
             message.save()
-            return redirect("home")  # Redirect to the home page after saving
+            return redirect("home")  # Leitet zur Home-Seite umleiten, nachdem die Nachricht gespeichert wurde
     else:
         return render(request, "hello/log_message.html", {"form": form})
     

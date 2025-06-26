@@ -6,6 +6,6 @@ class LogMessage(models.Model):
     log_date = models.DateTimeField("date logged")
 
     def __str__(self):
-        """Returns a string representation of a message."""
+        """String repräsentiert den Log-Eintrag."""
         date = timezone.localtime(self.log_date)
         return f"'{self.message}' logged on {date.strftime('%A, %d %B, %Y at %X')}"
