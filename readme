@@ -1,0 +1,65 @@
+# Django Webanwendung – Setup-Anleitung
+
+Dieses Projekt ist eine Beispiel-Webanwendung mit Django, entwickelt für das Modul Softwarearchitektur.
+
+## Voraussetzungen
+
+- Python 3.10 oder neuer
+- [pip](https://pip.pypa.io/en/stable/)
+- Git (optional)
+
+## Setup-Schritte
+
+1. **Repository klonen (optional):**
+   ```bash
+   git clone <REPO-URL>
+   cd <Projektordner>
+   ```
+
+2. **Virtuelle Umgebung erstellen und aktivieren:**
+
+   **Windows (PowerShell):**
+   ```powershell
+   python -m venv .venv
+   .venv\Scripts\Activate
+   ```
+
+   **Windows (cmd):**
+   ```cmd
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+3. **Abhängigkeiten installieren:**
+   ```bash
+   pip install -r requirements.txt
+   pip install django
+   ```
+
+4. **Datenbankmigrationen durchführen:**
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Superuser anlegen (optional, für Admin-Login):**
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+6. **Entwicklungsserver starten:**
+   ```bash
+   python manage.py runserver
+   ```
+
+7. **Webanwendung im Browser öffnen:**
+   - [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+## Hinweise
+
+- Die Zugangsdaten für einen Beispiel-Admin findest du ggf. in der Datei `requirements.txt` oder du legst selbst einen Superuser an.
+- Bei Problemen mit dem virtuellen Environment stelle sicher, dass keine Sonderzeichen (z.B. Umlaute) im Projektpfad sind.
+- Für weitere Fragen siehe die Django-Dokumentation: https://docs.djangoproject.com/
+
+---
+
+Viel Erfolg beim Arbeiten mit der
